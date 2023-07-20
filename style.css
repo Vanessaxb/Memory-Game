@@ -69,7 +69,7 @@ body {
     width: 100%;
     backface-visibility: hidden;
     /* transform-style: preserve-3d;
-    transition: transform 0.5s; */
+    /*transition: transform 0.5s; */
     /* transform: rotateY(180deg); */
     /* border: 2px solid rgba(176, 63, 41, 0.677); */
     border-radius: 8px;

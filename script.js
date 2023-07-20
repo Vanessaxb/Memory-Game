@@ -1,5 +1,4 @@
 
-
 const frameContainer = document.querySelector('.frames');
 
 
@@ -48,55 +47,75 @@ function createFrame() {
     }
 }
 
+let timer;
+let timeRemaining = 480; //adding 480 seconds timer
+
+function startTimer() {
+    timer = setInterval(updateTimer, 1000); //Update every second
+}
+
+function updateTimer() {
+    timeRemaining--;
+    if (timeRemaining <= 0) {
+        clearInterval(timer);
+        alert('Time is up! Game over.')
+        location.reload() //if time is up, it will alert and refresh game
+    }
+}
+
+
+
 function flipCard() {
     const cardId = this.getAttribute('data-id');
     console.log(cardId);
     if (cardChosen.length >= 2 || cardsMatched.includes(cardId)) {
-      // Already selected two cards or the card is already matched
-      return;
+        // Already selected two cards or the card is already matched
+        return;
     }
   
     this.classList.toggle('flipped');
    
     cardChosen.push(this);
     cardChosenId.push(cardId);
-  
+    
     if (cardChosen.length === 2) {
-      setTimeout(checkForMatches, 500);
+        setTimeout(checkForMatches, 500);
     }
-  }
-  
+}
+
 
 //*Checking for Matches
 function checkForMatches() {
     const optionOneId = cardChosenId[0];
     const optionTwoId = cardChosenId[1];
-  
+    
     if (optionOneId === optionTwoId) {
-      alert('You found a match!');
+        // alert('You found a match!');
       cardsMatched.push(optionOneId);
     } else {
       cardChosen[0].classList.remove("flipped");
       cardChosen[1].classList.remove("flipped");
-      alert('Try again');
+    //   alert('Try again');
     }
-  
+    
     cardChosen.length = 0;
     cardChosenId.length = 0;
-  
+    
     if (cardsMatched.length === picturesCollection.length / 2) {
-      alert(`Congratulations! You've found them all!`);
+        alert(`Congratulations! You've found them all!`);
     }
-  }
+}
 
-  // Event listener for the refresh button
+// Event listener for the refresh button
 const refreshButton = document.getElementById('refreshButton');
 refreshButton.addEventListener('click', () => {
-  // Reload the page to reset the game
-  location.reload();
+    // Reload the page to reset the game
+    location.reload();
 });
   
 createFrame();
+startTimer();
+
 
 
 
