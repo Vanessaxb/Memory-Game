@@ -5,8 +5,26 @@ body {
     height:100vh;
     margin: 0;
     background-color: grey;
-    color:antiquewhite
+    color:antiquewhite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    transform-style: preserve-3d; 
+    
 }
+#refreshButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #refreshButton:hover {
+    background-color: #45a049;
+  }
     
 .frames {
     display: flex;
@@ -14,48 +32,56 @@ body {
     justify-content: center;
     height:450px;
     width:250px;
-    /* flex-direction: column; */
-    /* align-items: center; */
     border: 3px solid whitesmoke;
-    /* padding: 1rem; */
     gap: 5px;
 }
 
-.frame {
+.card { /*card picture*/
     height: 100px;
     width: 50px;
-    border: 2px solid rgb(255, 42, 0);
+    border: 2px solid rgba(176, 63, 41, 0.677);
     border-radius: 8px;
     box-shadow: 0 0 4px 0 black(0, 0, 0, 1);
-    background-image: url('./Blank.png');
-    background-size: cover;
+    /* background-size: cover; */
     padding: 1px;
-    /* margin: 1px; */
+   
    /*adding backface visibility and transform porperty for flipping*/
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     transform-style: preserve-3d;
     /*adding transition for flipping card*/
     transition: transform 0.5s;
 } 
 
-.frame.flipped {
+.front {
     transform: rotateY(180deg);
+    /* background-size: cover; */
+        /* height: 100%;
+    width: 100%; */
 }
 
+.front, 
+.back { 
+    /* Add a backside image to cover the card */
+    position: absolute;
+    background-image: url('./White.jpg');
+    /* background-color: white; */
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* transform-style: preserve-3d;
+    transition: transform 0.5s; */
+    /* transform: rotateY(180deg); */
+    /* border: 2px solid rgba(176, 63, 41, 0.677); */
+    border-radius: 8px;
+  }
 
+.flipped {
+    transform: rotateY(180deg);
+    
+}
 
-/* .div {
-    visibility: hidden; 
-} */
 
 .flipped {
     /* transform: rotateY(180deg); */
     background-size: 50px 100px;
-}
-.hide {
-    padding: 10px;
-    visibility: hidden;
-}
-.match, .showimg {
-    visibility: visible !important;
 }

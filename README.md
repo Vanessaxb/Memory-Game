@@ -1,11 +1,14 @@
 # The Memory Game
 Game build using the Dom
+How is the game played?
 
 
 ## Tech Stack
     1. HTML
     2. CSS
     3.JS
+
+## Challenges
 
 ## Resources
 
