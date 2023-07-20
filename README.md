@@ -9,8 +9,10 @@ Game build using the Dom
 
 ## Resources
 
-//Tutorial video:
+//Tutorial videos:
 https://www.youtube.com/watch?v=bznJPt4t_4s
+
+https://www.youtube.com/watch?v=hhZlbUCSE7o
 
 //Spread Operator:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
