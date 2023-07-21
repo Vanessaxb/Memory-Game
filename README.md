@@ -27,11 +27,11 @@ As you can see on elements, this code line made 'data-id' = card names, therefor
 2. My flipping wasn't showing the back of my card. To solve that, on the createFrame function I had to create 2 more div's, each representing a card's face (front/back) so that I could toggle them using the flipping function.
 
 ## Images
-![alt text](C:\Users\Owner\Desktop\Practice\Mod1\Memory_Game\Images\GameScreen.png "Memory Game Start Screen")
+![alt text](Images/GameSartScreen.png "Memory Game Start Screen")
 
-![alt text](C:\Users\Owner\Desktop\Practice\Mod1\Memory_Game\Images\Win State.png "Win State Screen")
+![alt text](Images/Win State.png "Win State Screen")
 
-![alt text](C:\Users\Owner\Desktop\Practice\Mod1\Memory_Game\Images\Lose State.png "Lose State Screen")
+![alt text](Images/Lose State.png "Lose State Screen")
 
 ## Resources
 
