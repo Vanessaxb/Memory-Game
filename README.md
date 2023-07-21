@@ -29,8 +29,6 @@ As you can see on elements, this code line made 'data-id' = card names, therefor
 ## Images
 ![alt text](Images/GameSartScreen.png "Memory Game Start Screen")
 
-![alt text](Images/GameSartScreen.png "Memory Game Start Screen")
-
 ![alt text](Images/Win_State.png "Win State Screen")
 
 ![alt text](Images/Lose_State.png "Lose State Screen")
