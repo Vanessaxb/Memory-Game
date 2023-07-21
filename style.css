@@ -2,20 +2,79 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    height:100vh;
+    height:100%;
     margin: 0;
-    background-color: grey;
-    color:antiquewhite;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 25px;
+    background-color: grey;    
     transform-style: preserve-3d; 
-    
+
+.h1 {
+    color:#FDE8D4;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 1);
+    font-size: 52px;
+    }    
 }
+    
+.frames {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height:450px;
+    width:230px;
+    border: 3px solid #FDE8D4;
+    gap: 5px;
+}
+
+.card {
+    height: 100px;
+    width: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 black(0, 0, 0, 1);
+    margin-top: 2px;
+    margin-bottom: 4px;
+    
+    /*adding backface visibility and transform porperty for flipping*/
+    transform-style: preserve-3d;/*needed to preserve position*/
+    /*adding transition effect for flipping card*/
+    transition: transform 0.5s;
+} 
+
+.front {
+    transform: rotateY(180deg);      
+}
+
+.front, 
+.back { 
+    /* Add a backside image to cover the card */
+    position: absolute;
+    background-image: url('./images/White.jpg');
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;     
+    border: 1px solid rgba(176, 63, 41, 0.677);
+    border-radius: 8px;
+    
+  }
+
+.flipped {
+    transform: rotateY(180deg);
+    background-size: 50px 100px;
+}
+
+#click-count {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 270px;
+    font-size: 20px;
+    font-weight: bold;
+    color:   #FCF3F0;    
+}
+
 #refreshButton {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4caf50;
+
+    background-color:rgba(176, 63, 41, 0.677);
     color: white;
     border: none;
     border-radius: 4px;
@@ -25,63 +84,3 @@ body {
   #refreshButton:hover {
     background-color: #45a049;
   }
-    
-.frames {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height:450px;
-    width:250px;
-    border: 3px solid whitesmoke;
-    gap: 5px;
-}
-
-.card { /*card picture*/
-    height: 100px;
-    width: 50px;
-    border: 2px solid rgba(176, 63, 41, 0.677);
-    border-radius: 8px;
-    box-shadow: 0 0 4px 0 black(0, 0, 0, 1);
-    /* background-size: cover; */
-    padding: 1px;
-   
-   /*adding backface visibility and transform porperty for flipping*/
-    /* backface-visibility: hidden; */
-    transform-style: preserve-3d;
-    /*adding transition for flipping card*/
-    transition: transform 0.5s;
-} 
-
-.front {
-    transform: rotateY(180deg);
-    /* background-size: cover; */
-        /* height: 100%;
-    width: 100%; */
-}
-
-.front, 
-.back { 
-    /* Add a backside image to cover the card */
-    position: absolute;
-    background-image: url('./White.jpg');
-    /* background-color: white; */
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    /* transform-style: preserve-3d;
-    /*transition: transform 0.5s; */
-    /* transform: rotateY(180deg); */
-    /* border: 2px solid rgba(176, 63, 41, 0.677); */
-    border-radius: 8px;
-  }
-
-.flipped {
-    transform: rotateY(180deg);
-    
-}
-
-
-.flipped {
-    /* transform: rotateY(180deg); */
-    background-size: 50px 100px;
-}

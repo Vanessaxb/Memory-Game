@@ -1,10 +1,10 @@
 
 const frameContainer = document.querySelector('.frames');
 
-
 let cardChosen = [];
 let cardChosenId = [];
 let cardsMatched = [];
+let clickCounter = 0;
 
 
 //Creating my Picture collection
@@ -16,6 +16,7 @@ const picturesCollection = ["Dear.jpg", "Bear.jpg", "Giraffe.jpg", "Hypo.jpg",
 
 console.log(picturesCollection);
 
+
 //*Shuffle cards
 picturesCollection.sort(() => 0.5 - Math.random());
     
@@ -23,17 +24,15 @@ picturesCollection.sort(() => 0.5 - Math.random());
 function createFrame() {
     for (let i = 0; i < picturesCollection.length; i++) {
         const card = document.createElement("div");
-        // creating class list
+        // creating class list to card
         card.classList.add('card');
-        card.setAttribute('data-id', picturesCollection[i]);
-        
+        card.setAttribute('data-id', picturesCollection[i]);        
         
         const front = document.createElement("div");
         front.classList.add('front')
         //formating my picturesCollection size to fit frame  
-        front.style.backgroundImage = `url(${picturesCollection[i]})`
-        front.style.backgroundSize = "50px 100px"
-        
+        front.style.backgroundImage = `url(./images/${picturesCollection[i]})`
+        front.style.backgroundSize = "50px 100px"        
 
         const back = document.createElement("div");
         back.classList.add('back');
@@ -41,12 +40,13 @@ function createFrame() {
         card.appendChild(back);
         card.appendChild(front);
         card.addEventListener('click', flipCard);
-        
+        card.addEventListener('click', updateClickCounter);      
+
         console.log(card);
         frameContainer.appendChild(card);
     }
 }
-
+//*Adding a timer
 let timer;
 let timeRemaining = 480; //adding 480 seconds timer
 
@@ -63,11 +63,18 @@ function updateTimer() {
     }
 }
 
+//*Adding Click Counter
+function updateClickCounter() {
+    clickCounter++
+    const clicks = document.querySelector('#click-count')
+    clicks.textContent = `Click Count: ${clickCounter}`;
+}
 
-
+//*Flipping Cards
 function flipCard() {
     const cardId = this.getAttribute('data-id');
     console.log(cardId);
+    //this doesnt allow me to select cards already matched
     if (cardChosen.length >= 2 || cardsMatched.includes(cardId)) {
         // Already selected two cards or the card is already matched
         return;
@@ -86,7 +93,7 @@ function flipCard() {
 
 //*Checking for Matches
 function checkForMatches() {
-    const optionOneId = cardChosenId[0];
+    const optionOneId = cardChosenId[0];//Cardchosen here
     const optionTwoId = cardChosenId[1];
     
     if (optionOneId === optionTwoId) {
@@ -106,7 +113,7 @@ function checkForMatches() {
     }
 }
 
-// Event listener for the refresh button
+//* Event listener for the refresh button
 const refreshButton = document.getElementById('refreshButton');
 refreshButton.addEventListener('click', () => {
     // Reload the page to reset the game
