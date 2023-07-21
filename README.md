@@ -4,6 +4,8 @@ This is a Kid's Memory game, built using the DOM.
 How is the game played?
 The player selects the first card, the card flipps. When the second card is selected(and it flipps), if they match: cards keep being flipped. If cards don't match, they will both flip back. Player keeps selecting cards, two by two, either until all cards are selected or time runs out.
 
+## Characteristics
+
 Win state: all cards are matched within timer.
 
 Lose state: cards are not macthed within timer.
@@ -12,7 +14,7 @@ Multiple rounds: cards will be automaticly shuffled and ready to play again when
 
 Reset Game: at any time, player can choose to click on the New Game button to restard the game.
 
-Click Count: added a click count to keep track of scoring how many clicks. 
+Click Count: added a click count tracker for scoring. 
 
 ## Tech Stack
     1. HTML
