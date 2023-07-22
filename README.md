@@ -6,15 +6,15 @@ The player selects the first card, the card flipps. When the second card is sele
 
 ## Characteristics
 
-Win state: all cards are matched within timer.
+**Win state**: all cards are matched within timer.
 
-Lose state: cards are not macthed within timer.
+**Lose state**: cards are not macthed within timer.
 
-Multiple rounds: cards will be automaticly shuffled and ready to play again when current game round is over.
+**Multiple rounds**: cards will be automaticly shuffled and ready to play again when current game round is over.
 
-Reset Game: at any time, player can choose to click on the New Game button to restard the game.
+**Reset Game**: at any time, player can choose to click on the New Game button to restard the game.
 
-Click Count: added a click count tracker for scoring. 
+**Click Count**: added a click count tracker for scoring. 
 
 ## Tech Stack
     1. HTML
