@@ -37,25 +37,35 @@ As you can see on elements, this code line made 'data-id' = card names, therefor
 
 ## Resources
 
-//Tutorial videos: 
+####Tutorial videos: 
 (https://www.youtube.com/watch?v=bznJPt4t_4s)
 
 (https://www.youtube.com/watch?v=hhZlbUCSE7o)
 
-//setTimeOut: 
+####setTimeOut: 
 (https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
 
-//alert():
+####alert():
 (https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
 
-//aAdding pictures to my script.js:
+####Adding pictures to my script.js:
 (https://code.visualstudio.com/docs/languages/markdown#:~:text=Inserting%20images%20and%20links%20to%20files&text=You%20can%20also%20insert%20images,inserted%20when%20you%20drop%20it.)
 
-//toggle():
+####toggle():
 (https://www.w3schools.com/howto/howto_js_toggle_class.asp)
 
-//flipping():
+####flipping():
 (https://css-tricks.com/almanac/properties/b/backface-visibility/)
 
-//location.reload():
+####location.reload():
 (https://www.w3schools.com/jsref/met_loc_reload.asp)
+
+####transform and rotate:
+(https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
+(https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY)
+
+####setInterval() and clearInterval:
+(https://developer.mozilla.org/en-US/docs/Web/API/clearInterval)
+
+####Array.prototype.includes():
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
