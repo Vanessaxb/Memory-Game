@@ -2,7 +2,7 @@
 This is a Kid's Memory game, built using the DOM.
 
 How is the game played?
-The player selects the first card, the card flipps. When the second card is selected(and it flipps), if they match: cards keep being flipped. If cards don't match, they will both flip back. Player keeps selecting cards, two by two, either until all cards are selected or time runs out.
+The player selects the first card, the card flipps. When the second card is selected, if they match: cards keep being flipped. If cards don't match, they will both flip back. Player keeps selecting cards, two by two, either until all cards are selected or time runs out.
 
 ## Characteristics
 
@@ -26,7 +26,7 @@ I had two main challenges:
 1. I chose to compare cards using their class id and not names. This was done by this line: card.setAttribute('data-id', picturesCollection[i]);
 As you can see on elements, this code line made 'data-id' = card names, therefore, I could compare them.
 
-2. My flipping wasn't showing the back of my card. To solve that, on the createFrame function I had to create 2 more div's, each representing a card's face (front/back) so that I could toggle them using the flipping function.
+2. My flipping wasn't showing the back of my card. To solve that, on the createFrame function I had to add 2 more div's, each representing a card's face (front/back) so that I could toggle them using the flipping function.
 
 ## Images
 #### Start Screen
