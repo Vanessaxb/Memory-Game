@@ -1,5 +1,5 @@
-# The Memory Game
-This is a Kid's Memory game.
+# Kid's Memory Game
+This is a project to complete the first module of my Software Engineering certification @Per Scholas
 
 **How is the game played?** 
 The player selects the first card, the card flipps. When the second card is selected, if they match: cards keep being flipped. If cards don't match, they will both flip back. Player keeps selecting cards, two by two, either until all cards are selected or time runs out.
@@ -21,7 +21,15 @@ The player selects the first card, the card flipps. When the second card is sele
 ## Tech Stack
     1. HTML
     2. CSS with FlexBox
-    3. JS
+    3. JS    
+
+**The purpose is to demonstrate my knowledge of:**
+
+    Semantic HTML and application structure
+    Styling and appearance using CSS including FlexBox
+    Dynamic events and interactions utilizing JavaScript
+    Classes and Object Oriented Programming
+    DOM manipulation
 
 ## Challenges
 I had two main challenges:
