@@ -32,7 +32,7 @@ function createFrame() {
         const front = document.createElement("div");
         front.classList.add('front')
         //formating my picturesCollection size to fit frame  
-        front.style.backgroundImage = `url(./images/${picturesCollection[i]})`
+        front.style.backgroundImage = `url(./Images/${picturesCollection[i]})`
         front.style.backgroundSize = "50px 100px"        
 
         const back = document.createElement("div");
