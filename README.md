@@ -4,7 +4,7 @@ This is a Kid's Memory game, built using the DOM.
 **How is the game played?**
 The player selects the first card, the card flipps. When the second card is selected, if they match: cards keep being flipped. If cards don't match, they will both flip back. Player keeps selecting cards, two by two, either until all cards are selected or time runs out.
 
-## Characteristics
+## Features
 
 **Win state**: all cards are matched within timer.
 
@@ -49,7 +49,7 @@ As you can see on elements, this code line made 'data-id' = card names, therefor
 #### alert():
 (https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
 
-#### Adding pictures to my script.js:
+#### Adding pictures to my README.md:
 (https://code.visualstudio.com/docs/languages/markdown#:~:text=Inserting%20images%20and%20links%20to%20files&text=You%20can%20also%20insert%20images,inserted%20when%20you%20drop%20it.)
 
 #### toggle():
