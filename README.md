@@ -43,30 +43,21 @@ As you can see on elements, this code line made 'data-id' = card names, therefor
 
 (https://www.youtube.com/watch?v=hhZlbUCSE7o)
 
-#### setTimeOut: 
-(https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+#### setTimeOut: (https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
 
-#### alert():
-(https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
+#### alert(): (https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
 
-#### Adding pictures to my README.md:
-(https://code.visualstudio.com/docs/languages/markdown#:~:text=Inserting%20images%20and%20links%20to%20files&text=You%20can%20also%20insert%20images,inserted%20when%20you%20drop%20it.)
+#### Adding pictures to my README.md: (https://code.visualstudio.com/docs/languages/markdown#:~:text=Inserting%20images%20and%20links%20to%20files&text=You%20can%20also%20insert%20images,inserted%20when%20you%20drop%20it.)
 
-#### toggle():
-(https://www.w3schools.com/howto/howto_js_toggle_class.asp)
+#### toggle(): (https://www.w3schools.com/howto/howto_js_toggle_class.asp)
 
-#### flipping():
-(https://css-tricks.com/almanac/properties/b/backface-visibility/)
+#### flipping(): (https://css-tricks.com/almanac/properties/b/backface-visibility/)
 
-#### location.reload():
-(https://www.w3schools.com/jsref/met_loc_reload.asp)
+#### location.reload(): (https://www.w3schools.com/jsref/met_loc_reload.asp)
 
-#### transform and rotate:
-(https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
+#### transform and rotate: (https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
 (https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY)
 
-#### setInterval() and clearInterval:
-(https://developer.mozilla.org/en-US/docs/Web/API/clearInterval)
+#### setInterval() and clearInterval: (https://developer.mozilla.org/en-US/docs/Web/API/clearInterval)
 
-#### Array.prototype.includes():
-(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+#### Array.prototype.includes(): (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
