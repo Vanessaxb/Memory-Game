@@ -5,14 +5,14 @@ body {
     height:100%;
     margin: 0;
     background-color: grey;    
-    transform-style: preserve-3d; 
+}
 
 .h1 {
     color:#FDE8D4;
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 1);
     font-size: 52px;
     }    
-}
+
     
 .frames {
     display: flex;
@@ -32,13 +32,16 @@ body {
     margin-top: 2px;
     margin-bottom: 4px;
     
-    /*adding backface visibility and transform porperty for flipping*/
+    /*adding backface visibility and transform property for flipping*/
     transform-style: preserve-3d;/*needed to preserve position*/
+    /* sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element */
     /*adding transition effect for flipping card*/
     transition: transform 0.5s;
 } 
 
 .front {
+    /*rotates around Y axis without deforming it*/
+    /*wohtout it, all cars sow their picture to start with*/
     transform: rotateY(180deg);      
 }
 

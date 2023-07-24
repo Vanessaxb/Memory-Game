@@ -18,7 +18,7 @@ The player selects the first card, the card flipps. When the second card is sele
 
 ## Tech Stack
     1. HTML
-    2. CSS
+    2. CSS with FlexBox
     3. JS
 
 ## Challenges
@@ -37,11 +37,6 @@ As you can see on elements, this code line made 'data-id' = card names, therefor
 ![alt text](Images/Lose_State.png "Lose State Screen")
 
 ## Resources
-
-#### Tutorial videos: 
-(https://www.youtube.com/watch?v=bznJPt4t_4s)
-
-(https://www.youtube.com/watch?v=hhZlbUCSE7o)
 
 #### setTimeOut: (https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
 
