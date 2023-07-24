@@ -1,8 +1,10 @@
 # The Memory Game
 This is a Kid's Memory game, built using the DOM.
 
-**How is the game played?**
+**How is the game played?** 
 The player selects the first card, the card flipps. When the second card is selected, if they match: cards keep being flipped. If cards don't match, they will both flip back. Player keeps selecting cards, two by two, either until all cards are selected or time runs out.
+
+### Live version: (https://vanessaxb.github.io/Memory-Game/)
 
 ## Features
 
