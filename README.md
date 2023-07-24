@@ -25,11 +25,11 @@ The player selects the first card, the card flipps. When the second card is sele
 
 **The purpose is to demonstrate my knowledge of:**
 
-    Semantic HTML and application structure
-    Styling and appearance using CSS including FlexBox
-    Dynamic events and interactions utilizing JavaScript
-    Classes and Object Oriented Programming
-    DOM manipulation
+    * Semantic HTML and application structure
+    * Styling and appearance using CSS including FlexBox
+    * Dynamic events and interactions utilizing JavaScript
+    * Classes and Object Oriented Programming
+    * DOM manipulation
 
 ## Challenges
 I had two main challenges:
